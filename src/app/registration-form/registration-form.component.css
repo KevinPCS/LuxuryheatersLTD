@@ -1,20 +1,25 @@
-.divTableCell { 
-    background: green;
-}
-
-.divTable{
-    width: flex;
-}
-
-.divTableRow {
-    color:blue;
-}
-
 .form {
     flex: 1;
     min-width: 444px;
 }
 
+.divTable{
+    width: flex;
+    min-width: max-content;
+}
+
+.divTableRow {
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+}
+
+.divTableCell { 
+    background: green;
+    margin: 10px;
+    width: stretch;
+}
+
 mat-form-field {
-    flex: 1;
+    width: stretch;
 }

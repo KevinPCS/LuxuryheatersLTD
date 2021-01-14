@@ -1,5 +1,5 @@
 mat-card{
-    /*align-self: center;*/
+    min-width: max-content;
     max-width: 1366px;
     max-height: 633px;
     padding: 0px 110px;
