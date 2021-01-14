@@ -1,0 +1,20 @@
+.divTableCell { 
+    background: green;
+}
+
+.divTable{
+    width: flex;
+}
+
+.divTableRow {
+    color:blue;
+}
+
+.form {
+    flex: 1;
+    min-width: 444px;
+}
+
+mat-form-field {
+    flex: 1;
+}
