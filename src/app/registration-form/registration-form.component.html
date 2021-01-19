@@ -3,7 +3,7 @@
         <div class="divTable">
             <div class="divTableBody">
                 <div class="divTableRow">
-                    <div class="divTableCellLeft">
+                    <div class="divTableCell" id="name">
                         <mat-form-field appearance="outline">
                             <mat-label>Name</mat-label>
                             <input matInput type="text"/>
@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="divTableRow">
-                    <div class="divTableCellLeft"> 
+                    <div class="divTableCell" id="email"> 
                         <mat-form-field appearance="outline">
                             <mat-label>Email</mat-label>
                             <input matInput type="email"/>
@@ -19,13 +19,13 @@
                     </div>
                 </div>
                 <div class="divTableRow">
-                    <div class="divTableCellLeft">                    
+                    <div class="divTableCell" id="street">                    
                         <mat-form-field appearance="outline">
                             <mat-label>Street</mat-label>
                             <input matInput type="text"/>
                         </mat-form-field>
                     </div>
-                    <div class="divTableCellLeft">                        
+                    <div class="divTableCell" id="zip">                        
                         <mat-form-field appearance="outline">
                             <mat-label>Zip-Code</mat-label>
                             <input matInput type="number"/>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="divTableRow">
-                    <div class="divTableCellLeft">
+                    <div class="divTableCell" id="password">
                         <mat-form-field appearance="outline">
                             <mat-label>Password</mat-label>
                             <input matInput type="password"/>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="divTableRow">
-                    <div class="divTableCellLeft"> 
+                    <div class="divTableCell" id="passwordConfirm"> 
                         <mat-form-field appearance="outline">
                             <mat-label>Password confirm</mat-label>
                             <input matInput type="password"/>
@@ -53,14 +53,18 @@
         <div class="divTable">
             <div class="divTableBody">
                 <div class="divTableRow">
-                    <div class="divTableCellRight">
+                    <div class="divTableCell" id="instructionsHeadline">
                         <h1>Where do you find the Serial number of your oven?</h1>
                     </div>
                 </div>
                 <div class="divTableRow">
-                    <div class="divTableCellInstructions">{{ instructions | async }}
-                    </div>
-                    <div class="divTableCellImage"></div>
+                    <div class="divTableCellInstructions" id="instructions">{{ instructions | async }}</div>
+                    <div class="divTableCellImage" type="image" id="serialNumberImage"></div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell" id="licenseCheckbox"></div>
+                    <div class="divTableCell" id="licenseLink"></div>
+                    <div class="divTableCell" id="submitButton"></div>
                 </div>
             </div>
         </div>

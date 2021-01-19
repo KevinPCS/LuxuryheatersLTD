@@ -1,40 +1,38 @@
 .form-group {
     display: flex;
+    opacity: 1;
 }
 
 .divTable{
     width: 50%;
-    min-width: max-content;
+    display: -webkit-inline-box; /*Chrome Inline Box */
+    display: -moz-inline-box; /*Mozilla Inline Box */
+}
+
+.divTableBody{
+    max-width: fit-content;
 }
 
 .divTableRow {
-    background-color: blue;
     padding: 10px;
     display: flex;
 }
 
-.divTableCellLeft { 
-    background: green;
-    margin: 10px;
-    width: stretch;
-}
-
-.divTableCellRight { 
-    background: green;
+.divTableCell { 
     margin: 10px;
     width: stretch;
 }
 
 .divTableCellInstructions { 
-    background: rgb(238, 255, 0);
     margin: 10px;
-    width: 20%;
+    width: 30%;
+    font-size: 14px;
 }
 
 .divTableCellImage { 
-    background: rgb(255, 13, 13);
+    content: url("/../assets/images/TutorialSerialnumber.jpg");
     margin: 10px;
-    width: 80%;
+    width: 70%;
 }
 
 mat-form-field {
