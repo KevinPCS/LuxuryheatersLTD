@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { of } from 'rxjs';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-registration-form',
@@ -10,7 +9,6 @@ import { Observable } from 'rxjs';
 export class RegistrationFormComponent implements OnInit {
 
   instructions: Observable<string> | undefined;
-
   constructor() { }
 
   ngOnInit(): void {
