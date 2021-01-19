@@ -1,10 +1,9 @@
-.form {
-    flex: 1;
-    min-width: 444px;
+.form-group {
+    display: flex;
 }
 
 .divTable{
-    width: flex;
+    width: 50%;
     min-width: max-content;
 }
 
@@ -20,6 +19,16 @@
     width: stretch;
 }
 
+.divTableCellInstructions { 
+    background: rgb(238, 255, 0);
+    margin: 10px;
+    width: 20%;
+}
+
 mat-form-field {
     width: stretch;
+}
+
+.mat-form-field-wrapper {
+    padding: 0px !important;
 }
