@@ -3,8 +3,16 @@
     opacity: 1;
 }
 
-.divTable{
-    width: 50%;
+.divTableLeft{
+    margin-left: 110px;
+    margin-right: 55px;
+    display: -webkit-inline-box; /*Chrome Inline Box */
+    display: -moz-inline-box; /*Mozilla Inline Box */
+}
+
+.divTableRight{
+    margin-right: 110px;
+    margin-left: 55px;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
@@ -32,6 +40,7 @@
     content: url("/../assets/images/TutorialSerialnumber.jpg");
     margin: 10px;
     width: 70%;
+    max-width: 300px;
 }
 
 mat-form-field {
