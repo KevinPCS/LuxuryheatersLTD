@@ -5,14 +5,15 @@
 
 .divTableLeft{
     margin-left: 110px;
-    margin-right: 55px;
+    margin-right: space-between;
+    min-width: 444px;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
 
 .divTableRight{
     margin-right: 110px;
-    margin-left: 55px;
+    min-width: 515px;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
@@ -23,6 +24,12 @@
 
 .divTableRow {
     display: flex;
+}
+
+.divTableRowRight{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .divTableCell { 
@@ -42,6 +49,18 @@
     width: 70%;
     max-width: 300px;
 }
+
+.divTableCellButton{
+    height: 50px;
+    width: 145px;
+}
+
+.mat-flat-button{
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
 mat-form-field {
     width: stretch;
