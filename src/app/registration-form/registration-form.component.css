@@ -21,6 +21,7 @@ h1{
     min-width: 515px;
     width: 50%;
     align-self: center;
+    outline: solid;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
