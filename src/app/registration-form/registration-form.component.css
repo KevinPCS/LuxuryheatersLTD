@@ -5,8 +5,8 @@
 
 .divTableLeft{
     margin-left: 110px;
-    margin-right: space-between;
     min-width: 444px;
+    width: 50%;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
@@ -14,6 +14,7 @@
 .divTableRight{
     margin-right: 110px;
     min-width: 515px;
+    width: 50%;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
