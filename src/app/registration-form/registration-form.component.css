@@ -1,3 +1,9 @@
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .form-group {
     display: flex;
     opacity: 1;
@@ -13,8 +19,10 @@
 
 .divTableRight{
     margin-right: 110px;
+    margin-top: 20px;
     min-width: 515px;
     width: 50%;
+    align-self: center;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
@@ -31,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .divTableCell { 
@@ -51,6 +60,18 @@
     max-width: 300px;
 }
 
+.divTableCellCheckbox{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.divTableCellLicenseLink{
+    margin-right: auto;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
 .divTableCellButton{
     height: 50px;
     width: 145px;
@@ -62,6 +83,11 @@
     height: 100% !important;
 }
 
+.mat-checkbox{
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
 
 mat-form-field {
     width: stretch;
@@ -69,4 +95,9 @@ mat-form-field {
 
 .mat-form-field-wrapper {
     padding: 0px !important;
+}
+
+mat-checkbox::ng-deep.mat-checkbox-inner-container {
+    width: 30px;
+    height: 30px;
 }
