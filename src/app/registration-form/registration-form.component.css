@@ -10,7 +10,7 @@ h1{
 }
 
 .divTableLeft{
-    margin-left: 110px;
+    margin-left: 5%;
     min-width: 444px;
     width: 50%;
     display: -webkit-inline-box; /*Chrome Inline Box */
@@ -18,7 +18,7 @@ h1{
 }
 
 .divTableRight{
-    margin-right: 110px;
+    margin-right: 5%;
     margin-top: 20px;
     min-width: 515px;
     width: 50%;
