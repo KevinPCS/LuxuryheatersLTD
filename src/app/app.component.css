@@ -51,6 +51,7 @@
   }
 
   .content {
+    display: flex;
     margin-top: 70px;
     padding: 0 16px;
     height: 100%;
@@ -132,10 +133,6 @@
 
   .card.card.highlight-card span {
     margin-left: 60px;
-  }
-
-  .center{
-
   }
 
   svg#rocket {
