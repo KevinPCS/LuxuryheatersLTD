@@ -1,7 +1,5 @@
 h1{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-transform: uppercase;
 }
 
 .form-group {
@@ -19,7 +17,7 @@ h1{
 
 .divTableRight{
     margin-right: 5%;
-    margin-top: 20px;
+    margin-bottom: 25px;
     min-width: 515px;
     width: 50%;
     align-self: center;
@@ -93,8 +91,17 @@ mat-form-field {
     width: stretch;
 }
 
+
 .mat-form-field-wrapper {
     padding: 0px !important;
+}
+
+.mat-input-element{
+    color: #2699FB;
+}
+
+.mat-form-field-label{
+    color: #2699FB;
 }
 
 mat-checkbox::ng-deep.mat-checkbox-inner-container {

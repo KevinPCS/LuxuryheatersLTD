@@ -6,12 +6,14 @@ mat-card{
     backdrop-filter: blur(50px);
     padding-top: 30px;
     margin-top: 2%;
+    color: #2699FB;
 }
 
 h1 {
     text-align: center;
     font-size: 21px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .center {

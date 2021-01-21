@@ -2,3 +2,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: OpenSans, "Helvetica Neue", sans-serif; }
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: white !important;
+    border-radius: 5px !important;
+    color: #2699FB !important;
+    outline-width: 2px !important;
+}
