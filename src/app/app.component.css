@@ -35,6 +35,7 @@
     background-color: #1976d2;
     color: white;
     font-weight: 600;
+    padding-left: 5%;
   }
 
   .toolbar img {
@@ -52,6 +53,7 @@
 
   .content {
     display: flex;
+    min-width: 1024px;
     margin-top: 70px;
     padding: 0 16px;
     height: 100%;
