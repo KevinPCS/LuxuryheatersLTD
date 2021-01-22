@@ -18,25 +18,28 @@ h1{
 .divTableRight{
     margin-right: 5%;
     margin-bottom: 25px;
+    border-radius: 5px;
     min-width: 515px;
     width: 50%;
     align-self: center;
-    outline: solid;
+    box-shadow: 0 0 16px #7FC4FD;
     display: -webkit-inline-box; /*Chrome Inline Box */
     display: -moz-inline-box; /*Mozilla Inline Box */
 }
 
 .divTableBody{
     max-width: fit-content;
+    border-radius: 10px;
 }
 
 .divTableRow {
     display: flex;
+    padding-bottom: 7px;
 }
 
 .divTableRowRight{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgba(255, 255, 255, .5);
@@ -54,10 +57,11 @@ h1{
 }
 
 .divTableCellImage { 
-    content: url("/../assets/images/TutorialSerialnumber.jpg");
+    content: url("/../assets/images/TutorialSerial.jpg");
     margin: 10px;
     width: 70%;
     max-width: 300px;
+    outline: dotted;
 }
 
 .divTableCellCheckbox{
@@ -75,12 +79,16 @@ h1{
 .divTableCellButton{
     height: 50px;
     width: 145px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .mat-flat-button{
     display: block !important;
+    border-radius: 10px;
     width: 100% !important;
     height: 100% !important;
+    background-color: #2699FB;
 }
 
 .mat-checkbox{
@@ -93,20 +101,41 @@ mat-form-field {
     width: stretch;
 }
 
-
-.mat-form-field-wrapper {
-    padding: 0px !important;
-}
-
 .mat-input-element{
-    color: #2699FB;
-}
-
-.mat-form-field-label{
     color: #2699FB;
 }
 
 mat-checkbox::ng-deep.mat-checkbox-inner-container {
     width: 30px;
     height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 3px #7FC4FD;
 }
+
+::mat-checkbox mat-primary mat-checkbox-checked{
+    background-color: #2699FB;
+    color: #2699FB;
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #2699FB;
+}
+
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border: 10px;
+  }
+
+/* NOTIZEN
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    background-color: #2699FB;
+    outline: none;
+  }
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #2699FB;
+    outline: none;
+  }
+
+  */
