@@ -1,23 +1,23 @@
-mat-card{
-    min-width: 1200px;
-    max-width: 1366px;
-    max-height: 633px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
-    padding-top: 30px;
-    margin-top: 2%;
-    color: #2699FB;
+mat-card {
+  min-width: 1200px;
+  max-width: 1366px;
+  max-height: 633px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  padding-top: 30px;
+  margin-top: 2%;
+  color: #2699fb;
 }
 
 h1 {
-    text-align: center;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .center {
-    display: flex;
-    justify-content: top-left;
-    margin: auto;
-  }
+  display: flex;
+  justify-content: top-left;
+  margin: auto;
+}

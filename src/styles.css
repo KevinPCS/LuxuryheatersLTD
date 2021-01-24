@@ -1,37 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: OpenSans; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: OpenSans;
+}
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-    background-color: white !important;
-    border-radius: 10px !important;
-    color: #2699FB !important;
-    outline-width: 2px !important;
+  background-color: white !important;
+  border-radius: 10px !important;
+  color: #2699fb !important;
+  outline-width: 2px !important;
+  caret-color: #2699fb !important;
 }
 
 .mat-form-field-wrapper {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-wrapper {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
-.mat-form-field-label{
-    color: #2699FB !important;
-    font-size: 14 !important;
+.mat-form-field-label {
+  color: #2699fb !important;
+  font-size: 14 !important;
 }
 
-.mat-h1, .mat-headline, .mat-typography h1{
-    font: 300 OpenSans !important;
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+  font: 300 OpenSans !important;
 }
 
-.mat-body, .mat-body-1, .mat-typography{
-    font: 300 OpenSans !important;
+.mat-body,
+.mat-body-1,
+.mat-typography {
+  font: 300 OpenSans !important;
 }
 
-.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background, .mat-checkbox-checked.mat-primary .mat-checkbox-background {
-    background-color: #2699FB !important;
-    border-radius: 10px !important;
+.mat-checkbox-indeterminate.mat-primary .mat-checkbox-background,
+.mat-checkbox-checked.mat-primary .mat-checkbox-background {
+  background-color: #2699fb !important;
+  border-radius: 10px !important;
 }

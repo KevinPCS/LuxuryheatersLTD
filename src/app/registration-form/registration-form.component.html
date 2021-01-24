@@ -1,86 +1,91 @@
 <form id="registrationForm">
-    <div class="form-group">
-        <div class="divTableLeft">
-            <div class="divTableBody">
-                <div class="divTableRow">
-                    <div class="divTableCell" id="name">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Name</mat-label>
-                            <input matInput type="text" id="nameInput"/>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell" id="email"> 
-                        <mat-form-field appearance="outline">
-                            <mat-label>Email</mat-label>
-                            <input matInput type="email" id="emailInput"/>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell" id="street">                    
-                        <mat-form-field appearance="outline">
-                            <mat-label>Street</mat-label>
-                            <input matInput type="text" id="streetInput"/>
-                        </mat-form-field>
-                    </div>
-                    <div class="divTableCell" id="zip">                        
-                        <mat-form-field appearance="outline">
-                            <mat-label>Zip-Code</mat-label>
-                            <input matInput type="number" id="zipInput"/>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell" id="password">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Password</mat-label>
-                            <input matInput type="password" id="passwordInput"/>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell" id="passwordConfirm"> 
-                        <mat-form-field appearance="outline">
-                            <mat-label>Password confirm</mat-label>
-                            <input matInput type="password" id="passwordConfirm"/>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
+  <div class="form-group">
+    <div class="divTableLeft">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell" id="name">
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput type="text" id="nameInput" />
+            </mat-form-field>
+          </div>
         </div>
-        <div class="divTableRight">
-            <div class="divTableBody">
-                <div class="divTableRowRight">
-                    <div class="divTableCell" id="instructionsHeadline">
-                        <h1>Where do you find the Serial number of your oven?</h1>
-                    </div>
-                </div>
-                <div class="divTableRowRight">
-                    <div class="divTableCellInstructions" id="instructions">{{ instructions | async }}</div>
-                    <div class="divTableCellImage" type="image" id="serialImage"></div>
-                </div>
-                <div class="divTableRowRight">
-                    <div class="divTableCell" id="serial">
-                        <mat-form-field appearance="outline">
-                            <mat-label>Serial Number</mat-label>
-                            <input matInput type="text" id="serialInput">
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="divTableRowRight">
-                    <div class="divTableCellCheckbox" id="licenseCheckbox">
-                        <mat-checkbox color="primary"></mat-checkbox>
-                    </div>
-                    <div class="divTableCellLicenseLink" id="licenseLink">
-                        <p>I accept the terms and conditions</p>
-                    </div>
-                    <div class="divTableCellButton" id="submitButtonCell">
-                        <button mat-flat-button id="submit" color="primary">Submit</button>
-                    </div>
-                </div>
-            </div>
+        <div class="divTableRow">
+          <div class="divTableCell" id="email">
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput type="email" id="emailInput" />
+            </mat-form-field>
+          </div>
         </div>
+        <div class="divTableRow">
+          <div class="divTableCell" id="street">
+            <mat-form-field appearance="outline">
+              <mat-label>Street</mat-label>
+              <input matInput type="text" id="streetInput" />
+            </mat-form-field>
+          </div>
+          <div class="divTableCell" id="zip">
+            <mat-form-field appearance="outline">
+              <mat-label>Zip-Code</mat-label>
+              <input matInput type="number" id="zipInput" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell" id="password">
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" id="passwordInput" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell" id="passwordConfirm">
+            <mat-form-field appearance="outline">
+              <mat-label>Confirm password</mat-label>
+              <input matInput type="password" id="passwordConfirm" />
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="divTableRight">
+      <div class="divTableBody">
+        <div class="divTableRowRight">
+          <div class="divTableCell" id="instructionsHeadline">
+            <h1>Where do you find the Serial number of your oven?</h1>
+          </div>
+        </div>
+        <div class="divTableRowRight">
+          <div class="divTableCellInstructions" id="instructions">
+            {{ instructions | async }}
+          </div>
+          <div class="divTableCellImage" type="image" id="serialImage"></div>
+        </div>
+        <div class="divTableRowRight">
+          <div class="divTableCell" id="serial">
+            <mat-form-field appearance="outline">
+              <mat-label>Serial Number</mat-label>
+              <input matInput type="text" id="serialInput" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="divTableRowRight">
+          <div class="divTableCellCheckbox" id="licenseCheckbox">
+            <mat-checkbox color="primary"></mat-checkbox>
+          </div>
+          <div class="divTableCellLicenseLink" id="licenseLink">
+            <p>
+              I accept the
+              <a [routerLink]="['/license-agreement']">terms and conditions</a>
+            </p>
+          </div>
+          <div class="divTableCellButton" id="submitButtonCell">
+            <button mat-flat-button id="submit" color="primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
