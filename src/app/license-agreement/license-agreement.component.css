@@ -8,3 +8,7 @@ mat-card {
   margin-top: 2%;
   color: #2699fb;
 }
+
+.licenseAgreement {
+  display: block;
+}

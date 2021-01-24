@@ -10,6 +10,7 @@ import { RegistrationDataService } from './registration-data.service';
 export class RegistrationFormComponent implements OnInit {
   instructions: Observable<string> | undefined;
   registrationForm: FormGroup | undefined;
+  licenseAgreement: Observable<string> | undefined;
 
   constructor(
     private registrationDataService: RegistrationDataService,

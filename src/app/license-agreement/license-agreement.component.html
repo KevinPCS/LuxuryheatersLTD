@@ -1,4 +1,8 @@
 <mat-card class="foreground" type="center" id="content">
   <h1>License Agreement</h1>
-  <div class="center"></div>
+  <div class="center">
+    <div class="licenseAgreementScroll">
+      {{ licenseAgreement | async }}
+    </div>
+  </div>
 </mat-card>
