@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './registration/registration.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatButtonModule} from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
 import { LicenseAgreementComponent } from './license-agreement/license-agreement.component';
+import { RegistrationDataService } from './registration-form/registration-data.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,14 @@ import { LicenseAgreementComponent } from './license-agreement/license-agreement
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [RegistrationDataService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
