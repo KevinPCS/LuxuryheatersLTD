@@ -8,9 +8,9 @@ import { RegistrationDataService } from './registration-data.service';
   styleUrls: ['./registration-form.component.css'],
 })
 export class RegistrationFormComponent implements OnInit {
-  instructions: Observable<string> | undefined;
-  registrationForm: FormGroup | undefined;
-  licenseAgreement: Observable<string> | undefined;
+  instructions: Observable<string>;
+  registrationForm: FormGroup;
+  licenseAgreement: Observable<string>;
 
   constructor(
     private registrationDataService: RegistrationDataService,

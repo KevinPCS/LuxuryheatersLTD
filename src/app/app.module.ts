@@ -14,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LicenseAgreementComponent } from './license-agreement/license-agreement.component';
 import { RegistrationDataService } from './registration-form/registration-data.service';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
+    ScrollingModule,
   ],
   providers: [RegistrationDataService],
   bootstrap: [AppComponent],
