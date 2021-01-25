@@ -10,6 +10,15 @@ mat-card {
   overflow-y: scroll;
 }
 
+h1 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .licenseAgreement {
   display: block;
+  margin-left: 115px;
+  margin-right: 115px;
 }
