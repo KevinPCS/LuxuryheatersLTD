@@ -6,7 +6,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: OpenSans;
+  font: 300 OpenSans !important;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
@@ -27,6 +27,7 @@ body {
 
 .mat-form-field-label {
   color: #2699fb !important;
+  font: 300 OpenSans !important;
   font-size: 14 !important;
 }
 
