@@ -14,9 +14,11 @@ body {
   border-radius: 10px !important;
   color: #2699fb !important;
   outline-width: 2px !important;
-  caret-color: #2699fb !important;
 }
-
+.mat-form-field.mat-warn .mat-input-element,
+.mat-form-field-invalid .mat-input-element {
+  caret-color: #000000;
+}
 .mat-form-field-wrapper {
   padding-bottom: 0 !important;
 }
