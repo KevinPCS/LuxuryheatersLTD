@@ -43,11 +43,13 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 5px;
 }
 
 .divTableCell {
-  margin: 10px;
   width: stretch;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .divTableCellInstructions {
