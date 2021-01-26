@@ -13,11 +13,11 @@ h1 {
   width: 50%;
   display: -webkit-inline-box; /*Chrome Inline Box */
   display: -moz-inline-box; /*Mozilla Inline Box */
-  font-weight: bold !important;
 }
 
 .divTableRight {
   margin-right: 5%;
+  margin-top: 10px;
   border-radius: 5px;
   min-width: 515px;
   width: 50%;
@@ -121,4 +121,8 @@ mat-checkbox::ng-deep.mat-checkbox-inner-container {
 
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
   border: 10px;
+}
+
+mat-label {
+  font-weight: bold;
 }
