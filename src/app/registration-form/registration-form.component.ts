@@ -31,6 +31,10 @@ export class RegistrationFormComponent implements OnInit {
         this.registrationDataService.registrationData.email,
         Validators.required
       ),
+      city: this.formBuilder.control(
+        this.registrationDataService.registrationData.city,
+        Validators.required
+      ),
       street: this.formBuilder.control(
         this.registrationDataService.registrationData.street,
         Validators.required

@@ -7,6 +7,7 @@ export class RegistrationDataService {
   registrationData: {
     name: string;
     email: string;
+    city: string;
     street: string;
     zipCode: number;
     password: string;
@@ -17,6 +18,7 @@ export class RegistrationDataService {
     this.registrationData = {
       name: '',
       email: '',
+      city: '',
       street: '',
       zipCode: 0,
       password: '',
