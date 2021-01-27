@@ -16,12 +16,14 @@ import { LicenseAgreementComponent } from './license-agreement/license-agreement
 import { RegistrationDataService } from './registration-form/registration-data.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { RegistrationDataComponent } from './registration-data/registration-data.component';
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
     RegistrationFormComponent,
     LicenseAgreementComponent,
+    RegistrationDataComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
   ],
   providers: [RegistrationDataService],
   bootstrap: [AppComponent],
-  entryComponents: [LicenseAgreementComponent],
+  entryComponents: [LicenseAgreementComponent, RegistrationComponent],
 })
 export class AppModule {}

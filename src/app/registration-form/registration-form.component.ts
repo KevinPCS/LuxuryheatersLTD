@@ -15,6 +15,7 @@ import {
 } from '@angular/material/dialog';
 import { Observable, of } from 'rxjs';
 import { LicenseAgreementComponent } from '../license-agreement/license-agreement.component';
+import { RegistrationDataComponent } from '../registration-data/registration-data.component';
 @Component({
   selector: 'app-registration-form',
   templateUrl: './registration-form.component.html',
@@ -66,8 +67,10 @@ export class RegistrationFormComponent implements OnInit {
     };
   }
 
-  openDialog(): void {
-    console.log(this.registrationForm);
+  openSubmitDialog(): void {
+    this.dialog.open(RegistrationDataComponent, {
+      data: { formData: this.registrationForm.value },
+    });
   }
 
   openLicenseAgreementDialog(): void {
