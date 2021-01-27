@@ -11,6 +11,7 @@
                 type="text"
                 id="nameInput"
                 formControlName="name"
+                required
               />
             </mat-form-field>
           </div>
@@ -19,15 +20,25 @@
           <div class="divTableCell" id="email">
             <mat-label>Email</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="email" id="emailInput" />
+              <input
+                matInput
+                type="email"
+                id="emailInput"
+                formControlName="email"
+              />
             </mat-form-field>
           </div>
         </div>
         <div class="divTableRow">
-          <div class="divTableCell" id="email">
+          <div class="divTableCell" id="city">
             <mat-label>City</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="string" id="cityInput" />
+              <input
+                matInput
+                type="string"
+                id="cityInput"
+                formControlName="city"
+              />
             </mat-form-field>
           </div>
         </div>
@@ -35,21 +46,37 @@
           <div class="divTableCell" id="street">
             <mat-label>Street</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="text" id="streetInput" />
+              <input
+                matInput
+                type="text"
+                id="streetInput"
+                formControlName="street"
+              />
             </mat-form-field>
           </div>
           <div class="divTableCell" id="zip">
             <mat-label>Zip-Code</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="number" id="zipInput" />
+              <input
+                matInput
+                type="number"
+                id="zipInput"
+                formControlName="zipCode"
+              />
             </mat-form-field>
           </div>
         </div>
         <div class="divTableRow">
-          <div class="divTableCell" id="password">
+          <div class="divTableCell" id="password1">
             <mat-label>Password</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="password" id="passwordInput" />
+              <input
+                matInput
+                type="password"
+                id="passwordInput"
+                formControlName="password1"
+                required
+              />
             </mat-form-field>
           </div>
         </div>
@@ -57,7 +84,13 @@
           <div class="divTableCell" id="passwordConfirm">
             <mat-label>Confirm password</mat-label>
             <mat-form-field appearance="outline">
-              <input matInput type="password" id="passwordConfirm" />
+              <input
+                matInput
+                type="password"
+                id="passwordConfirm"
+                formControlName="password2"
+                required
+              />
             </mat-form-field>
           </div>
         </div>
