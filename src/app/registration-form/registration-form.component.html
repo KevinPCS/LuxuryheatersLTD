@@ -139,7 +139,12 @@
             <b>I accept the</b>
           </div>
           <div class="divTableCellLicenseLink" id="licenseLink">
-            <button mat-flat-button id="termsAndConditions" color="primary">
+            <button
+              mat-flat-button
+              id="termsAndConditions"
+              color="primary"
+              (click)="openLicenseAgreementDialog()"
+            >
               Terms and Conditions
             </button>
           </div>

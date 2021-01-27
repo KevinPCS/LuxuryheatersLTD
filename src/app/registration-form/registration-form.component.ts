@@ -7,7 +7,14 @@ import {
   ValidatorFn,
   Validators,
 } from '@angular/forms';
+import {
+  MatDialog,
+  MatDialogModule,
+  MatDialogConfig,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { Observable, of } from 'rxjs';
+import { LicenseAgreementComponent } from '../license-agreement/license-agreement.component';
 @Component({
   selector: 'app-registration-form',
   templateUrl: './registration-form.component.html',
@@ -40,7 +47,7 @@ export class RegistrationFormComponent implements OnInit {
     checkbox: this.formBuilder.control(false, Validators.requiredTrue),
   });
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.instructions = of(`Ut lobortis risus eget odio hendrerit, a feugiat nisl bibendum. 
@@ -63,8 +70,12 @@ export class RegistrationFormComponent implements OnInit {
     console.log(this.registrationForm);
   }
 
-  /*Password Check (WIP)
+  openLicenseAgreementDialog(): void {
+    /*  const dialogConfig = new MatDialogConfig(); */
+    this.dialog.open(LicenseAgreementComponent);
+  }
 
+  /*Password Check (WIP)
 
   checkPasswords() {
     if (this.registrationForm.hasError('passwordMismatch'))

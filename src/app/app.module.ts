@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './registration/registration.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -28,6 +29,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
@@ -36,5 +38,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
   ],
   providers: [RegistrationDataService],
   bootstrap: [AppComponent],
+  entryComponents: [LicenseAgreementComponent],
 })
 export class AppModule {}
