@@ -136,10 +136,12 @@
             ></mat-checkbox>
           </div>
           <div class="divTableCellLicenseLink" id="licenseLink">
-            <p>
-              I accept the
-              <a [routerLink]="['/license-agreement']">terms and conditions</a>
-            </p>
+            <b>I accept the</b>
+          </div>
+          <div class="divTableCellLicenseLink" id="licenseLink">
+            <button mat-flat-button id="termsAndConditions" color="primary">
+              Terms and Conditions
+            </button>
           </div>
           <div class="divTableCellButton" id="submitButtonCell">
             <button

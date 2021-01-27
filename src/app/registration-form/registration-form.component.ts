@@ -25,7 +25,7 @@ export class RegistrationFormComponent implements OnInit {
     ]),
     city: this.formBuilder.control('', Validators.required),
     street: this.formBuilder.control('', Validators.required),
-    zipCode: this.formBuilder.control(0, Validators.required),
+    zipCode: this.formBuilder.control(Validators.required),
     password1: this.formBuilder.control('', [
       Validators.required,
       this.checkPasswords,
